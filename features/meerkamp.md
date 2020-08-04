@@ -5,24 +5,32 @@ owner: Wouter
 
 # Feature: Meerkamp
 
-De grote vragen:
+### Grote vragen
 - Onderstaande deliveries beschrijven alleen meerkamp. Maar kunnen we ook stappen zetten om "generiek" toernooi systeem te ondersteunen? Zoals inschrijvingen, koppeling met scoreboard, wedstrijd resultaat in de zaal.
-- Willen we ondersteuning voor notificaties?
+- Moeten de resultaten van de meerkampen bewaard worden in NAS?
+
+### Personages in stories
+- Wedstrijdcoordinator/Wedstrijdleider
+- Speler
+- Scheidsrechter
+- Toeschouwer
 
 ## Delivery 1: Hulpmiddel voor wedstrijdcoordinator
 
-Scope: Zorgen voor een hulpmiddel waarmee wedstrijdcoordinator niet handmatig resultaten hoeven uit te rekenen. Het moet verder verkeerd ingevulde resultaten ontdekken.
+### Scope
+Zorgen voor een hulpmiddel waarmee wedstrijdcoordinator niet handmatig resultaten hoeven uit te rekenen. Het moet verder verkeerd ingevulde resultaten ontdekken.
 
-Out-of-scope: Alles wat via de server moet verlopen
+### Out-of-scope 
+Alles wat via de server moet verlopen of meerdere gebruikers betreft.
 
-Stories:
+### Stories
 - Als wedstrijdcoordinator kan ik een meerkamp aanmaken
 - Als wedstrijdcoordinator kan ik spelers aan een meerkamp toevoegen
 - Als wedstrijdcoordinator kan ik de onderlinge resultaten invullen
 - Als wedstrijdcoordinator kan ik een meerkamp bewaren
 - Als wedstrijdcoordinator kan ik na de laatste wedstrijd meteen zien wie op welke plaatst staat
 
-Openstaande vragen:
+### Openstaande vragen
 - Hoe gaan we om met niet NTTB-spelers?
 - Wat gebeurt er als spelers na aanvang toegevoegd/verwijderd worden?
 - Wat gebeurt er als het aantal games wordt aangepast? Zeker bij kleine clubs en onervaren wedstrijdcoordinators kan het gebeuren.
@@ -34,11 +42,13 @@ Openstaande vragen:
 
 ## Delivery 2: Meerdere gebruikers
 
-Scope: Zorgen dat spelers en scheidsrechter de resultaten kunnen invullen en dat zij zien wanneer zij wat moeten doen voor hun meerkamp.
+### Scope
+ Zorgen dat spelers en scheidsrechter de resultaten kunnen invullen en dat zij zien wanneer zij wat moeten doen voor hun meerkamp.
 
-Out-of-scope: Integratie scoreboard. Meerdere tafels, extra functionaliteit voor wedstrijdcoordinator/leider.
+### Out-of-scope 
+Integratie scoreboard. Meerdere tafels, extra functionaliteit voor wedstrijdcoordinator/leider.
 
-Stories: 
+### Stories
 - Als coordinator kan ik de meerkamp "openbaar" maken
 - Als speler kan ik de stand van de meerkamp zien
 - Als speler kan ik per wedstrijd zien tegen wie ik moet spelen
@@ -49,7 +59,7 @@ Stories:
 - Als speler/scheidsrechter kan ik aangeven dat mijn tegenstander afwezig is.
 - Als gebruiker/toeschouwer/speler/scheidsrechter zie ik in de app de resultaten bijgewerkt worden.
 
-Openstaande vragen:
+### Openstaande vragen
 - (advice) Alvast nadenken over hoe we het scoreboard systeem willen integreren. We willen hier geen aparte implementatie. Denk ook aan aantekeningen maken
 - Hoe weten de spelers bij welke wedstrijd zij moeten kijken?
 - Hoe krijgen niet NTTB leden toegang tot hun wedstrijd
@@ -57,18 +67,22 @@ Openstaande vragen:
 
 ## Delivery 3: Meerdere tafels en speelvolgorde
 
-Scope: Tijd bijhouden van een meerkamp (loopt men voor/achter op schema), volgorde van wedstrijden aanpassen, volgorde van rondes aanpassen, hoeveelheid tafels aanpassen.
+### Scope 
+Tijd bijhouden van een meerkamp (loopt men voor/achter op schema), volgorde van wedstrijden aanpassen, volgorde van rondes aanpassen, hoeveelheid tafels aanpassen.
 
-Out-of-scope: Rekening houden me totaal aantal tafels dat aanwezig is in de speelzaal, notificaties.
+### Out-of-scope
+Rekening houden me totaal aantal tafels dat aanwezig is in de speelzaal, notificaties.
 
-Stories:
+### Stories
 - ... TODO ...
 
 ## Delivery 4: Toernooi met meerdere meerkampen
 
-Scope: Notificaties! Rating/handicap van spelers invullen, automatische meerkampen aanmaken op basis van rating/handicap. Rekening houden met aantal tafels in de zaal zodat het systeem automatisch de aantal tafels per meerkamp kan aanpassen. Start/stop tijden. Meerkamp over meerdere dagen.
+### Scope
+Notificaties! Rating/handicap van spelers invullen, automatische meerkampen aanmaken op basis van rating/handicap. Rekening houden met aantal tafels in de zaal zodat het systeem automatisch de aantal tafels per meerkamp kan aanpassen. Start/stop tijden. Meerkamp over meerdere dagen.
 
-Out-of-scope: Externe systemen ter prestentatie. Finale
+### Out-of-scope
+Externe systemen ter prestentatie. Finale
 
-Stories:
+### Stories
 - ... TODO ...
