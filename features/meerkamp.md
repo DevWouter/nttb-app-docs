@@ -44,7 +44,8 @@ Zorgen voor een hulpmiddel waarmee toernooi coordinator niet handmatig resultate
 
 ### Out-of-scope 
 - Alles wat via de server moet verlopen of meerdere gebruikers betreft. 
-- Het aantal tafels en verdeling in de zaal
+- De verdeling in de zaal
+- Tijd
 
 ### Stories
 - Als toernooi coordinator kan ik een toernooi aanmaken
