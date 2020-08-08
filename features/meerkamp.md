@@ -20,6 +20,7 @@ owner: Wouter
 - Hoe zorgen we dat aanpassingen van schema (score, speler aanpassingen, et cetera) betrouwbaar verspreid worden aan alle devices? Wat als een device offline is? Denk hierbij aan tafels die omgewisseld worden en de persoon heeft geen internet
 - Moet alles via de mobiel of is er ook een desktop website? Zeker bij grote complexe toernooien is dat handig. Niet iedereen wilt de NTTB-app installeren of heeft een device die er geschikt voor is.
 - Kan een toernooi coordinator halverwege het toernooi spelers herindelen of meerkampen samenvoegen?
+- Welke gegevens moeten we uit NAS halen als we zoeken op basis van NTTB?
 
 ### Epic Todo's
 <!-- Dit zijn taken die helder zijn maar nog uitzoek werk nodig hebben -->
@@ -36,29 +37,47 @@ owner: Wouter
 
 De eerste oplevering is bedoeld om de kleinste meerwaarde aan de app toe te voegen en beschikbaar te maken voor de gebruikers.
 Aangezien het gebruik van de app altijd begint bij de toernooi coordinator is dat de enige personage die we gaan ondersteunen. 
+In basis moet de app het meerkamp formulier vervangen na deze delivery.
 
 ### Scope
 Zorgen voor een hulpmiddel waarmee toernooi coordinator niet handmatig resultaten hoeven uit te rekenen. Het moet verder verkeerd ingevulde resultaten ontdekken.
 
 ### Out-of-scope 
-Alles wat via de server moet verlopen of meerdere gebruikers betreft.
+- Alles wat via de server moet verlopen of meerdere gebruikers betreft. 
+- Het aantal tafels en verdeling in de zaal
 
 ### Stories
-- Als toernooi coordinator kan ik een meerkamp aanmaken
-- Als toernooi coordinator kan ik spelers aan een meerkamp toevoegen
-- Als toernooi coordinator kan ik de onderlinge resultaten invullen
-- Als toernooi coordinator kan ik een meerkamp bewaren
-- Als toernooi coordinator kan ik na de laatste wedstrijd meteen zien wie op welke plaatst staat
+- Als toernooi coordinator kan ik een toernooi aanmaken
+- Als toernooi coordinator kan ik spelers aan een toernooi toevoegen die **geen** lid zijn van de NTTB
+- Als toernooi coordinator kan ik spelers aan een toernooi toevoegen op basis van NTTB bondsnummer
+- Als toernooi coordinator kan ik spelers zoeken in de NAS op basis van club en naam zodat ik ze kan toevoegen 
+- Als toernooi coordinator kan ik meerdere spelers van dezelfde club toevoegen zodat ik ze aan het toernooi kan toevoegen
+- Als toernooi coordinator kan ik de rating, licentie en klasse van spelers ophalen uit NAS
+- Als toernooi coordinator kan ik het aantal meerkamps en de configuratie van de meerkamps (grote van de pool, wedstrijdvorm) bepalen
+- Als toernooi coordinator kan ik de spelers automatisch laten verdelen over de meerkampen in het toernooi
+- Als toernooi coordinator kan ik de spelers handmatig verdelen over de meerkampen in het toernooi
+- Als toernooi coordinator kan ik spelers tussen meerkampen verplaatsen binnen het toernooi
+- Als toernooi coordinator kan ik de wedstrijd resultaten invullen
+- Als toernooi coordinator kan ik het toernooi bewaren zodat ik het later kan aanpassen
+- Als gebruiker zie ik altijd de score en positie van een speler zien
 
 ### Openstaande vragen
-- Hoe gaan we om met niet NTTB-spelers? (Buitenlandse spelers of scholentoernooi)
-- Wat gebeurt er als spelers na aanvang toegevoegd/verwijderd worden?
-- Wat gebeurt er als het aantal games wordt aangepast? Zeker bij kleine clubs en onervaren toernooi coordinators kan het gebeuren.
-- Wat gebeurt er als een wedstrijd niet ingevuld wordt? 
+- [ ] Welke configureerbare eigenschappen heeft een meerkamp naast tijd, games, best-of-x en tafels?
+- [-] Wat gebeurt er als spelers na aanvang toegevoegd/verwijderd worden?
+    - [ ] Het standaard regelement voorziet hier in antwoord. Uitzoeken wat het regelement zegt, kijken of het gecodeficeerd kan worden en denk na over eventuele afwijking
+- [ ] Wat gebeurt er als het aantal games wordt aangepast? Zeker bij kleine clubs en onervaren toernooi coordinators kan het gebeuren.
+- [ ] Wat gebeurt er als een wedstrijd niet ingevuld wordt?
+    - [X] Moet altijd ingevuld worden. Dat of de toernooi coordinator moet de poul aanpassen.
+    - [ ] Is dit ook van toepassing als speler uitvalt bij blessure
+    - [ ] Hoe gaan we om met "valsspelers"?
 - Willen we ondersteuning hebben voor meerdere score systemen?
 - Hoe gaan we om met het "tossen" van de winnaar?
 - Hoe nummeren we de wedstrijden (zeker wanneer de organisatie meerdere meerkampen heeft, die ondersteuning moeten we hier al toevoegen)
-- Hoe gaan we om met privacy van spelers? (Hier nog de verantwoordelijkheid van wedstrijdleiding, maar bij volgende delivery ook verantwoordelijkheid van NTTB)
+    - [X] Normale meerkamp volgt numerieke oplopende nummers, maar wedstrijdformulier voorziet 
+- Privacy/AVG (Nu is alles nog lokaal, maar later kommen de gegevens ook centraal terecht)
+    - Wat als een speler zijn naam niet zichtbaar wilt hebben?
+    - <del>Hoe lang worden gegevens bewaard?</del> Wanneer worden gegevens verwijderd?
+    - Hoe kan een persoon zijn gegevens laten verwijderen?
 
 ## Delivery 2: Meerdere gebruikers
 
