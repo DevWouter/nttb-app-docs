@@ -14,33 +14,33 @@ owner: Wouter
 - Moet alles via de mobiel of is er ook een desktop website? Zeker bij grote complexe toernooien is dat handig.
 
 ### Personages in stories
-- Wedstrijdcoordinator/Wedstrijdleider
+- Toernooi coordinator (ook wel "coordinator" genoemd)
 - Speler
 - Scheidsrechter
 - Toeschouwer
 
-## Delivery 1: Hulpmiddel voor wedstrijdcoordinator
+## Delivery 1: Hulpmiddel voor toernooi coordinator
 
 De eerste oplevering is bedoeld om de kleinste meerwaarde aan de app toe te voegen en beschikbaar te maken voor de gebruikers.
-Aangezien het gebruik van de app altijd begint bij de wedstrijdcoordinator is dat de enige personage die we gaan ondersteunen. 
+Aangezien het gebruik van de app altijd begint bij de toernooi coordinator is dat de enige personage die we gaan ondersteunen. 
 
 ### Scope
-Zorgen voor een hulpmiddel waarmee wedstrijdcoordinator niet handmatig resultaten hoeven uit te rekenen. Het moet verder verkeerd ingevulde resultaten ontdekken.
+Zorgen voor een hulpmiddel waarmee toernooi coordinator niet handmatig resultaten hoeven uit te rekenen. Het moet verder verkeerd ingevulde resultaten ontdekken.
 
 ### Out-of-scope 
 Alles wat via de server moet verlopen of meerdere gebruikers betreft.
 
 ### Stories
-- Als wedstrijdcoordinator kan ik een meerkamp aanmaken
-- Als wedstrijdcoordinator kan ik spelers aan een meerkamp toevoegen
-- Als wedstrijdcoordinator kan ik de onderlinge resultaten invullen
-- Als wedstrijdcoordinator kan ik een meerkamp bewaren
-- Als wedstrijdcoordinator kan ik na de laatste wedstrijd meteen zien wie op welke plaatst staat
+- Als toernooi coordinator kan ik een meerkamp aanmaken
+- Als toernooi coordinator kan ik spelers aan een meerkamp toevoegen
+- Als toernooi coordinator kan ik de onderlinge resultaten invullen
+- Als toernooi coordinator kan ik een meerkamp bewaren
+- Als toernooi coordinator kan ik na de laatste wedstrijd meteen zien wie op welke plaatst staat
 
 ### Openstaande vragen
 - Hoe gaan we om met niet NTTB-spelers? (Buitenlandse spelers of scholentoernooi)
 - Wat gebeurt er als spelers na aanvang toegevoegd/verwijderd worden?
-- Wat gebeurt er als het aantal games wordt aangepast? Zeker bij kleine clubs en onervaren wedstrijdcoordinators kan het gebeuren.
+- Wat gebeurt er als het aantal games wordt aangepast? Zeker bij kleine clubs en onervaren toernooi coordinators kan het gebeuren.
 - Wat gebeurt er als een wedstrijd niet ingevuld wordt? 
 - Willen we ondersteuning hebben voor meerdere score systemen?
 - Hoe gaan we om met het "tossen" van de winnaar?
@@ -50,13 +50,13 @@ Alles wat via de server moet verlopen of meerdere gebruikers betreft.
 ## Delivery 2: Meerdere gebruikers
 
 De tweede delivery moet een de kleinste aanpassing zijn waarbij er meerwaarde wordt gecreeerd voor spelers en scheidsrechters.
-We willen hierbij de hoeveelheid werk voor de wedstrijdcoordinator reduceren. Het doel is dan ook dat deze niet meer zelf de wedstrijden hoeft in te vullen.
+We willen hierbij de hoeveelheid werk voor de toernooi coordinator reduceren. Het doel is dan ook dat deze niet meer zelf de wedstrijden hoeft in te vullen.
 
 ### Scope
  Zorgen dat spelers en scheidsrechter de resultaten kunnen invullen en dat zij zien wanneer zij wat moeten doen voor hun meerkamp.
 
 ### Out-of-scope 
-Integratie scoreboard. Meerdere tafels, extra functionaliteit voor wedstrijdcoordinator/leider.
+Integratie scoreboard. Meerdere tafels, extra functionaliteit voor toernooi coordinator/leider.
 
 ### Stories
 - Als coordinator kan ik de meerkamp "openbaar" maken
