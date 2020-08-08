@@ -4,14 +4,27 @@ owner: Wouter
 ---
 
 # Feature: Meerkamp
+## Epic requirements
+<!-- Dit zijn de eisen die we helder hebben -->
+- Ondersteun meerkamp met 3 t/m 11 spelers
+- Gegevens moeten in NAS gestopt kunnen worden
+- Moet ook knock-out toernooi ondersteunen
+- Spelers moeten automatisch ingedeeld worden op basis van algoritme
+- Toernooi coordinators moeten spelers kunnen verplaatsen vooraf gaand aan het toernooi
 
-### Grote vragen
-- Onderstaande deliveries beschrijven alleen meerkamp. Maar kunnen we ook stappen zetten om "generiek" toernooi systeem te ondersteunen? Zoals inschrijvingen, koppeling met scoreboard, wedstrijd resultaat in de zaal.
-- Moeten de resultaten van de meerkampen bewaard worden in NAS?
-- Hoe koppelen we externe systemen?
-- Hoe gaan we om met de weergave van een extreem grote meerkamp? Zo hoeven we alleen 4 t/m 8 spelers per meerkamp te ondersteunen, maar wat als we een theoretisch 99 spelers hebben?
-- Hoe zorgen we dat updates betrouwbaar verspreid worden?
-- Moet alles via de mobiel of is er ook een desktop website? Zeker bij grote complexe toernooien is dat handig.
+### Epic questions
+<!-- Dit zijn vragen die nog niet helder zijn -->
+- **Moeten** de resultaten van de meerkampen bewaard worden in NAS? Aka: Is het mogelijk om een meerkamp buiteren het toernooi te houden?
+- **Welke** externe systemen moeten we ondersteunen? En **hoe** koppelen we externe systemen? 
+- Hebben alle meerkampen dezelfde weergave? Een meerkamp van 3 spelers hoeft (in theorie) niet dezelfde hoeveelheid ruimte nodig als een meerkamp van 11 spelers. *Grootste uitdaging* is de tabel weergave van de behaalde scores 
+- Hoe zorgen we dat aanpassingen van schema (score, speler aanpassingen, et cetera) betrouwbaar verspreid worden aan alle devices? Wat als een device offline is? Denk hierbij aan tafels die omgewisseld worden en de persoon heeft geen internet
+- Moet alles via de mobiel of is er ook een desktop website? Zeker bij grote complexe toernooien is dat handig. Niet iedereen wilt de NTTB-app installeren of heeft een device die er geschikt voor is.
+- Kan een toernooi coordinator halverwege het toernooi spelers herindelen of meerkampen samenvoegen?
+
+### Epic Todo's
+<!-- Dit zijn taken die helder zijn maar nog uitzoek werk nodig hebben -->
+- [ ] Uitzoeken en documenteren algoritmes voor indelen enkele en meerdere meerkampen
+- [ ] Uitzoeken en documenteren algoritmes voor knock-out toernooi's. Denk hier bij ook aan "seeding" en ongebalanceerde trees.
 
 ### Personages in stories
 - Toernooi coordinator (ook wel "coordinator" genoemd)
