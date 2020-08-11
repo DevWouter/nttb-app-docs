@@ -3,7 +3,14 @@ status: work-in-progres
 owner: Wouter
 ---
 
-# Feature: Meerkamp
+> ## :warning: **LET OP!** :warning:  
+> Dit document wordt nog aan gesleuteld en is nog *niet gereed* voor een review.
+> - Moet ik dit lezen? Nee, als het gereed is voor review dan verandert de status van `work-in-progres` naar `ready-for-review`
+> - Vind je iets onduidelijk of verkeerd? Laat weten zodat we het zo snel mogelijk kunnen verbeteren.
+> - Mis je iets? Dat kan goed, want er wordt nog aangewerkt.
+> - Heb je toch een opmerking? Laat het weten, zodat we het mee kunnen nemen.
+
+# Feature: Toernooi (voorheen meerkamp)
 ## Epic requirements
 <!-- Dit zijn de eisen die we helder hebben -->
 - Ondersteun meerkamp met 3 t/m 11 spelers
